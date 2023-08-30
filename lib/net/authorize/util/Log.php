@@ -29,6 +29,10 @@ define("ANET_LOG_LEVEL",ANET_LOG_DEBUG);
 class Log
 {
     private $sensitiveXmlTags = NULL;
+    /**
+     * @var string[]
+     */
+    private $sensitiveStringRegexes;
     private $logFile = '';
     private $logLevel = ANET_LOG_LEVEL;
 	
